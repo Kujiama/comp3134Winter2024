@@ -1,0 +1,44 @@
+using NsLookup
+
+1. Tiktok.com
+IP: 13.227.74.40
+Location: San Francisco, California, United States of America
+
+IP: 13.227.74.109
+Location: San Francisco, California, United States of America
+
+IP: 13.227.74.62
+Location: San Francisco, California, United States of America
+
+IP: 13.227.74.95
+Location: San Francisco, California, United States of America
+
+
+
+2. Instagram.com
+IPv4: 57.240.22.174
+Location: Santa Clara, California, United States of America
+
+IPv6: 2a03:2880:f231:e5:face:b00c:0:4420
+Location: Santa Clara, California, United States of America
+
+
+
+3. shopify.com
+IPv4: 23.227.38.33
+Location: Ottawa, Ontario, Canada
+
+
+
+4. georgebrown.ca
+IPv4: 99.79.139.11
+Location: Montréal, Quebec, Canada
+
+
+
+5. usjr.edu.ph
+IPv4: 192.124.249.60
+Location: Menifee, California, United States of America
+
+
+
