@@ -1,0 +1,212 @@
+root@comp3134winter2024:~# sudo tcpdump -i any | tee $(date +"all_traffic_%Y%m%d_%H%M.txt")
+tcpdump: data link type LINUX_SLL2
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+19:08:11.027170 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 3893765193:3893765261, ack 1914498865, win 501, options [nop,nop,TS val 1717123192 ecr 1532909510], length 68
+19:08:11.027255 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 68:112, ack 1, win 501, options [nop,nop,TS val 1717123192 ecr 1532909510], length 44
+19:08:11.029195 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 112:220, ack 1, win 501, options [nop,nop,TS val 1717123194 ecr 1532909510], length 108
+19:08:11.029272 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 220:264, ack 1, win 501, options [nop,nop,TS val 1717123194 ecr 1532909510], length 44
+19:08:11.029334 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 264:316, ack 1, win 501, options [nop,nop,TS val 1717123194 ecr 1532909510], length 52
+19:08:11.029395 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 316:392, ack 1, win 501, options [nop,nop,TS val 1717123194 ecr 1532909510], length 76
+19:08:11.029455 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 392:460, ack 1, win 501, options [nop,nop,TS val 1717123194 ecr 1532909510], length 68
+19:08:11.029568 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 460:504, ack 1, win 501, options [nop,nop,TS val 1717123195 ecr 1532909510], length 44
+19:08:11.032258 eth0  In  IP cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519 > comp3134winter2024.ssh: Flags [.], ack 0, win 2047, options [nop,nop,TS val 1532909526 ecr 1717123176], length 0
+19:08:11.039171 eth0  In  IP cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519 > comp3134winter2024.ssh: Flags [.], ack 112, win 2046, options [nop,nop,TS val 1532909541 ecr 1717123192], length 0
+19:08:11.039171 eth0  In  IP cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519 > comp3134winter2024.ssh: Flags [.], ack 504, win 2041, options [nop,nop,TS val 1532909544 ecr 1717123195], length 0
+19:08:11.830199 eth0  Out IP comp3134winter2024.ssh > 180.101.88.252.46080: Flags [P.], seq 3963329603:3963329683, ack 2263735743, win 503, options [nop,nop,TS val 3895699929 ecr 3775884808], length 80
+19:08:12.027026 eth0  In  IP 180.101.88.252.46080 > comp3134winter2024.ssh: Flags [P.], seq 1:97, ack 80, win 263, options [nop,nop,TS val 3775885738 ecr 3895699929], length 96
+19:08:12.027076 eth0  Out IP comp3134winter2024.ssh > 180.101.88.252.46080: Flags [.], ack 97, win 503, options [nop,nop,TS val 3895700126 ecr 3775885738], length 0
+19:08:12.034749 lo    In  IP localhost.55526 > localhost.domain: 9533+ [1au] PTR? 173.43.230.99.in-addr.arpa. (55)
+19:08:12.036378 eth0  Out IP comp3134winter2024.43322 > 67.207.67.3.domain: 60765+ [1au] PTR? 173.43.230.99.in-addr.arpa. (55)
+19:08:12.036472 eth1  Out ARP, Request who-has 67.207.67.3 tell comp3134winter2024, length 28
+19:08:12.036560 eth0  Out IP comp3134winter2024.38160 > 67.207.67.3.domain: 15059+ [1au] PTR? 173.43.230.99.in-addr.arpa. (55)
+19:08:12.037640 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.43322: 60765 1/0/1 PTR cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com. (124)
+19:08:12.037641 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.38160: 15059 1/0/1 PTR cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com. (124)
+19:08:12.037835 lo    In  IP localhost.domain > localhost.55526: 9533 1/0/1 PTR cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com. (124)
+19:08:12.037951 lo    In  IP localhost.46449 > localhost.domain: 9626+ [1au] PTR? 255.228.22.165.in-addr.arpa. (56)
+19:08:12.038136 eth0  Out IP comp3134winter2024.48882 > 67.207.67.3.domain: 49863+ [1au] PTR? 255.228.22.165.in-addr.arpa. (56)
+19:08:12.038527 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.48882: 49863 NXDomain 0/1/1 (123)
+19:08:12.038570 eth0  Out IP comp3134winter2024.48882 > 67.207.67.3.domain: 49863+ PTR? 255.228.22.165.in-addr.arpa. (45)
+19:08:12.039045 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.48882: 49863 NXDomain 0/1/0 (112)
+19:08:12.040834 lo    In  IP localhost.domain > localhost.46449: 9626*$ 2/0/1 PTR comp3134winter2024., PTR comp3134winter2024.local. (126)
+19:08:12.041696 lo    In  IP localhost.35057 > localhost.domain: 35890+ [1au] PTR? 252.88.101.180.in-addr.arpa. (56)
+19:08:12.041920 eth0  Out IP comp3134winter2024.51550 > 67.207.67.3.domain: 41405+ [1au] PTR? 252.88.101.180.in-addr.arpa. (56)
+19:08:12.042018 eth0  Out IP comp3134winter2024.38304 > 67.207.67.3.domain: 16031+ [1au] PTR? 252.88.101.180.in-addr.arpa. (56)
+19:08:12.042600 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.51550: 41405 NXDomain 0/1/1 (105)
+19:08:12.042687 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.38304: 16031 NXDomain 0/1/1 (105)
+19:08:12.042705 eth0  Out IP comp3134winter2024.51550 > 67.207.67.3.domain: 41405+ PTR? 252.88.101.180.in-addr.arpa. (45)
+19:08:12.042743 eth0  Out IP comp3134winter2024.38304 > 67.207.67.3.domain: 16031+ PTR? 252.88.101.180.in-addr.arpa. (45)
+19:08:12.043007 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.51550: 41405 NXDomain 0/1/0 (94)
+19:08:12.043087 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.38304: 16031 NXDomain 0/1/0 (94)
+19:08:12.654352 eth0  In  IP ec2-15-236-92-17.eu-west-3.compute.amazonaws.com > comp3134winter2024: ICMP echo request, id 4, seq 15731, length 16
+19:08:12.654401 eth0  Out IP comp3134winter2024 > ec2-15-236-92-17.eu-west-3.compute.amazonaws.com: ICMP echo reply, id 4, seq 15731, length 16
+19:08:12.797498 eth0  In  IP ec2-35-181-52-246.eu-west-3.compute.amazonaws.com > comp3134winter2024: ICMP echo request, id 4, seq 15731, length 16
+19:08:12.797548 eth0  Out IP comp3134winter2024 > ec2-35-181-52-246.eu-west-3.compute.amazonaws.com: ICMP echo reply, id 4, seq 15731, length 16
+19:08:12.887359 eth0  In  IP 176.111.174.165.56744 > comp3134winter2024.216: Flags [S], seq 2670112908, win 1025, options [mss 1460], length 0
+19:08:13.057518 eth1  Out ARP, Request who-has 67.207.67.3 tell comp3134winter2024, length 28
+19:08:13.108152 eth0  In  IP ec2-13-37-250-53.eu-west-3.compute.amazonaws.com > comp3134winter2024: ICMP echo request, id 4, seq 15731, length 16
+19:08:13.108208 eth0  Out IP comp3134winter2024 > ec2-13-37-250-53.eu-west-3.compute.amazonaws.com: ICMP echo reply, id 4, seq 15731, length 16
+19:08:14.081512 eth1  Out ARP, Request who-has 67.207.67.3 tell comp3134winter2024, length 28
+19:08:14.336557 eth0  In  IP ip-190-134.4vendeta.com.56727 > comp3134winter2024.39890: Flags [S], seq 3309590380, win 1025, options [mss 1460], length 0
+19:08:15.105562 lo    In  IP comp3134winter2024 > comp3134winter2024: ICMP host 67.207.67.3 unreachable, length 91
+19:08:15.105570 lo    In  IP comp3134winter2024 > comp3134winter2024: ICMP host 67.207.67.3 unreachable, length 92
+19:08:15.107226 eth0  Out IP comp3134winter2024.53880 > 67.207.67.2.domain: Flags [S], seq 4174917016, win 64240, options [mss 1460,sackOK,TS val 702560742 ecr 0,nop,wscale 7,tfo  cookiereq,nop,nop], length 0
+19:08:15.108406 eth0  In  IP 67.207.67.2.domain > comp3134winter2024.53880: Flags [S.], seq 2063843352, ack 4174917017, win 65160, options [mss 1460,sackOK,TS val 1990301020 ecr 702560742,nop,wscale 9], length 0
+19:08:15.108446 eth0  Out IP comp3134winter2024.53880 > 67.207.67.2.domain: Flags [.], ack 1, win 502, options [nop,nop,TS val 702560743 ecr 1990301020], length 0
+19:08:15.108478 eth0  Out IP comp3134winter2024.53880 > 67.207.67.2.domain: Flags [P.], seq 1:48, ack 1, win 502, options [nop,nop,TS val 702560743 ecr 1990301020], length 47 26802+ PTR? 252.88.101.180.in-addr.arpa. (45)
+19:08:15.108816 eth0  In  IP 67.207.67.2.domain > comp3134winter2024.53880: Flags [.], ack 48, win 128, options [nop,nop,TS val 1990301020 ecr 702560743], length 0
+19:08:15.109561 eth0  In  IP 67.207.67.2.domain > comp3134winter2024.53880: Flags [P.], seq 1:48, ack 48, win 128, options [nop,nop,TS val 1990301021 ecr 702560743], length 47 26802 ServFail 0/0/0 (45)
+19:08:15.109569 eth0  Out IP comp3134winter2024.53880 > 67.207.67.2.domain: Flags [.], ack 48, win 502, options [nop,nop,TS val 702560745 ecr 1990301021], length 0
+19:08:15.109789 lo    In  IP localhost.domain > localhost.35057: 35890 NXDomain 0/1/1 (105)
+19:08:15.110033 lo    In  IP localhost.58842 > localhost.domain: 5813+ [1au] PTR? 53.0.0.127.in-addr.arpa. (52)
+19:08:15.110153 lo    In  IP localhost.domain > localhost.58842: 5813*$ 1/0/1 PTR localhost. (75)
+19:08:15.111192 lo    In  IP localhost.49814 > localhost.domain: 30585+ [1au] PTR? 3.67.207.67.in-addr.arpa. (53)
+19:08:15.111427 eth0  Out IP comp3134winter2024.52195 > 67.207.67.3.domain: 26151+ [1au] PTR? 3.67.207.67.in-addr.arpa. (53)
+19:08:15.111516 eth0  Out IP comp3134winter2024.56705 > 67.207.67.3.domain: 51724+ [1au] PTR? 3.67.207.67.in-addr.arpa. (53)
+19:08:15.111540 eth0  Out IP comp3134winter2024.53880 > 67.207.67.2.domain: Flags [P.], seq 48:92, ack 48, win 502, options [nop,nop,TS val 702560747 ecr 1990301021], length 44 42280+ PTR? 3.67.207.67.in-addr.arpa. (42)
+19:08:15.128135 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.56705: 51724 NXDomain 0/1/1 (120)
+19:08:15.128309 eth0  Out IP comp3134winter2024.56705 > 67.207.67.3.domain: 51724+ PTR? 3.67.207.67.in-addr.arpa. (42)
+19:08:15.129075 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.56705: 51724 NXDomain 0/1/0 (109)
+19:08:15.134033 eth0  In  IP 67.207.67.2.domain > comp3134winter2024.53880: Flags [P.], seq 48:159, ack 92, win 128, options [nop,nop,TS val 1990301046 ecr 702560747], length 111 42280 NXDomain 0/1/0 (109)
+19:08:15.135464 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.52195: 26151 NXDomain 0/1/1 (120)
+19:08:15.135724 eth0  Out IP comp3134winter2024.52195 > 67.207.67.3.domain: 26151+ PTR? 3.67.207.67.in-addr.arpa. (42)
+19:08:15.136156 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.52195: 26151 NXDomain 0/1/0 (109)
+19:08:15.136402 lo    In  IP localhost.domain > localhost.49814: 30585 NXDomain 0/1/1 (120)
+19:08:15.136592 lo    In  IP localhost.60051 > localhost.domain: 27751+ [1au] PTR? 2.0.118.10.in-addr.arpa. (52)
+19:08:15.136778 eth0  Out IP comp3134winter2024.53880 > 67.207.67.2.domain: Flags [P.], seq 92:135, ack 159, win 502, options [nop,nop,TS val 702560772 ecr 1990301046], length 43 1763+ PTR? 2.0.118.10.in-addr.arpa. (41)
+19:08:15.137194 eth0  In  IP 67.207.67.2.domain > comp3134winter2024.53880: Flags [P.], seq 159:251, ack 135, win 128, options [nop,nop,TS val 1990301049 ecr 702560772], length 92 1763 NXDomain 0/1/0 (90)
+19:08:15.137442 lo    In  IP localhost.domain > localhost.60051: 27751*$ 2/0/1 PTR comp3134winter2024., PTR comp3134winter2024.local. (122)
+19:08:15.138079 lo    In  IP localhost.60158 > localhost.domain: 26561+ [1au] PTR? 17.92.236.15.in-addr.arpa. (54)
+19:08:15.138202 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 504:3400, ack 1, win 501, options [nop,nop,TS val 1717127303 ecr 1532909544], length 2896
+19:08:15.138218 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 3400:4636, ack 1, win 501, options [nop,nop,TS val 1717127303 ecr 1532909544], length 1236
+19:08:15.138400 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 4636:4696, ack 1, win 501, options [nop,nop,TS val 1717127303 ecr 1532909544], length 60
+19:08:15.138529 eth0  Out IP comp3134winter2024.60250 > 67.207.67.3.domain: 33019+ [1au] PTR? 17.92.236.15.in-addr.arpa. (54)
+19:08:15.138620 eth0  Out IP comp3134winter2024.41158 > 67.207.67.3.domain: 27120+ [1au] PTR? 17.92.236.15.in-addr.arpa. (54)
+19:08:15.138646 eth0  Out IP comp3134winter2024.53880 > 67.207.67.2.domain: Flags [P.], seq 135:180, ack 251, win 502, options [nop,nop,TS val 702560774 ecr 1990301049], length 45 18449+ PTR? 17.92.236.15.in-addr.arpa. (43)
+19:08:15.157733 eth0  In  IP cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519 > comp3134winter2024.ssh: Flags [.], ack 4696, win 1982, options [nop,nop,TS val 1532913662 ecr 1717127303], length 0
+19:08:15.165319 eth0  In  IP cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519 > comp3134winter2024.ssh: Flags [.], ack 4696, win 2048, options [nop,nop,TS val 1532913662 ecr 1717127303], length 0
+19:08:15.165515 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.60250: 33019 1/0/1 PTR ec2-15-236-92-17.eu-west-3.compute.amazonaws.com. (116)
+19:08:15.165763 lo    In  IP localhost.domain > localhost.60158: 26561 1/0/1 PTR ec2-15-236-92-17.eu-west-3.compute.amazonaws.com. (116)
+19:08:15.165989 lo    In  IP localhost.57815 > localhost.domain: 31788+ [1au] PTR? 246.52.181.35.in-addr.arpa. (55)
+19:08:15.166250 eth0  Out IP comp3134winter2024.39337 > 67.207.67.3.domain: 60008+ [1au] PTR? 246.52.181.35.in-addr.arpa. (55)
+19:08:15.166338 eth0  Out IP comp3134winter2024.43993 > 67.207.67.3.domain: 53060+ [1au] PTR? 246.52.181.35.in-addr.arpa. (55)
+19:08:15.166363 eth0  Out IP comp3134winter2024.53880 > 67.207.67.2.domain: Flags [P.], seq 180:226, ack 251, win 502, options [nop,nop,TS val 702560801 ecr 1990301049], length 46 12320+ PTR? 246.52.181.35.in-addr.arpa. (44)
+19:08:15.168766 eth0  In  IP 67.207.67.2.domain > comp3134winter2024.53880: Flags [P.], seq 251:358, ack 226, win 128, options [nop,nop,TS val 1990301080 ecr 702560774], length 107 18449 1/0/0 PTR ec2-15-236-92-17.eu-west-3.compute.amazonaws.com. (105)
+19:08:15.170426 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.39337: 60008 1/0/1 PTR ec2-35-181-52-246.eu-west-3.compute.amazonaws.com. (118)
+19:08:15.170426 eth0  In  IP 67.207.67.2.domain > comp3134winter2024.53880: Flags [P.], seq 358:467, ack 226, win 128, options [nop,nop,TS val 1990301082 ecr 702560774], length 109 12320 1/0/0 PTR ec2-35-181-52-246.eu-west-3.compute.amazonaws.com. (107)
+19:08:15.170500 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.43993: 53060 1/0/1 PTR ec2-35-181-52-246.eu-west-3.compute.amazonaws.com. (118)
+19:08:15.170618 lo    In  IP localhost.domain > localhost.57815: 31788 1/0/1 PTR ec2-35-181-52-246.eu-west-3.compute.amazonaws.com. (118)
+19:08:15.170795 lo    In  IP localhost.46763 > localhost.domain: 50590+ [1au] PTR? 165.174.111.176.in-addr.arpa. (57)
+19:08:15.170848 eth0  Out IP comp3134winter2024.53880 > 67.207.67.2.domain: Flags [.], ack 467, win 501, options [nop,nop,TS val 702560806 ecr 1990301080], length 0
+19:08:15.171071 eth0  Out IP comp3134winter2024.52941 > 67.207.67.3.domain: 5798+ [1au] PTR? 165.174.111.176.in-addr.arpa. (57)
+19:08:15.171145 eth0  Out IP comp3134winter2024.41252 > 67.207.67.3.domain: 52412+ [1au] PTR? 165.174.111.176.in-addr.arpa. (57)
+19:08:15.171181 eth0  Out IP comp3134winter2024.53880 > 67.207.67.2.domain: Flags [P.], seq 226:274, ack 467, win 501, options [nop,nop,TS val 702560806 ecr 1990301080], length 48 42033+ PTR? 165.174.111.176.in-addr.arpa. (46)
+19:08:15.171475 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.41252: 52412 NXDomain 0/1/1 (117)
+19:08:15.171519 eth0  Out IP comp3134winter2024.41252 > 67.207.67.3.domain: 52412+ PTR? 165.174.111.176.in-addr.arpa. (46)
+19:08:15.171776 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.52941: 5798 NXDomain 0/1/1 (117)
+19:08:15.171959 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.41252: 52412 NXDomain 0/1/0 (106)
+19:08:15.172007 eth0  In  IP 67.207.67.2.domain > comp3134winter2024.53880: Flags [P.], seq 467:575, ack 274, win 128, options [nop,nop,TS val 1990301084 ecr 702560806], length 108 42033 NXDomain 0/1/0 (106)
+19:08:15.172093 eth0  Out IP comp3134winter2024.52941 > 67.207.67.3.domain: 5798+ PTR? 165.174.111.176.in-addr.arpa. (46)
+19:08:15.172695 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.52941: 5798 NXDomain 0/1/0 (106)
+19:08:15.172862 lo    In  IP localhost.domain > localhost.46763: 50590 NXDomain 0/1/1 (117)
+19:08:15.173018 lo    In  IP localhost.34530 > localhost.domain: 52910+ [1au] PTR? 53.250.37.13.in-addr.arpa. (54)
+19:08:15.173227 eth0  Out IP comp3134winter2024.33109 > 67.207.67.3.domain: 7026+ [1au] PTR? 53.250.37.13.in-addr.arpa. (54)
+19:08:15.173310 eth0  Out IP comp3134winter2024.44514 > 67.207.67.3.domain: 54448+ [1au] PTR? 53.250.37.13.in-addr.arpa. (54)
+19:08:15.173332 eth0  Out IP comp3134winter2024.53880 > 67.207.67.2.domain: Flags [P.], seq 274:319, ack 575, win 501, options [nop,nop,TS val 702560808 ecr 1990301084], length 45 46758+ PTR? 53.250.37.13.in-addr.arpa. (43)
+19:08:15.174931 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.41158: 27120 1/0/1 PTR ec2-15-236-92-17.eu-west-3.compute.amazonaws.com. (116)
+19:08:15.200287 eth0  In  IP 67.207.67.2.domain > comp3134winter2024.53880: Flags [P.], seq 575:682, ack 319, win 128, options [nop,nop,TS val 1990301112 ecr 702560808], length 107 46758 1/0/0 PTR ec2-13-37-250-53.eu-west-3.compute.amazonaws.com. (105)
+19:08:15.200553 lo    In  IP localhost.domain > localhost.34530: 52910 1/0/1 PTR ec2-13-37-250-53.eu-west-3.compute.amazonaws.com. (116)
+19:08:15.200805 lo    In  IP localhost.42300 > localhost.domain: 57726+ [1au] PTR? 134.190.148.91.in-addr.arpa. (56)
+19:08:15.201065 eth0  Out IP comp3134winter2024.52793 > 67.207.67.3.domain: 35622+ [1au] PTR? 134.190.148.91.in-addr.arpa. (56)
+19:08:15.201159 eth0  Out IP comp3134winter2024.38533 > 67.207.67.3.domain: 33745+ [1au] PTR? 134.190.148.91.in-addr.arpa. (56)
+19:08:15.201184 eth0  Out IP comp3134winter2024.53880 > 67.207.67.2.domain: Flags [P.], seq 319:366, ack 682, win 501, options [nop,nop,TS val 702560836 ecr 1990301112], length 47 35494+ PTR? 134.190.148.91.in-addr.arpa. (45)
+19:08:15.201539 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.52793: 35622 1/0/1 PTR ip-190-134.4vendeta.com. (93)
+19:08:15.201555 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.38533: 33745 1/0/1 PTR ip-190-134.4vendeta.com. (93)
+19:08:15.201592 eth0  In  IP 67.207.67.2.domain > comp3134winter2024.53880: Flags [P.], seq 682:766, ack 366, win 128, options [nop,nop,TS val 1990301113 ecr 702560836], length 84 35494 1/0/0 PTR ip-190-134.4vendeta.com. (82)
+19:08:15.201688 lo    In  IP localhost.domain > localhost.42300: 57726 1/0/1 PTR ip-190-134.4vendeta.com. (93)
+19:08:15.209727 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.44514: 54448 1/0/1 PTR ec2-13-37-250-53.eu-west-3.compute.amazonaws.com. (116)
+19:08:15.219355 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.33109: 7026 1/0/1 PTR ec2-13-37-250-53.eu-west-3.compute.amazonaws.com. (116)
+19:08:15.245542 eth0  Out IP comp3134winter2024.53880 > 67.207.67.2.domain: Flags [.], ack 766, win 501, options [nop,nop,TS val 702560881 ecr 1990301113], length 0
+19:08:15.548417 eth0  Out IP comp3134winter2024.ssh > 180.101.88.252.46080: Flags [P.], seq 80:160, ack 97, win 503, options [nop,nop,TS val 3895703647 ecr 3775885738], length 80
+19:08:15.745642 eth0  In  IP 180.101.88.252.46080 > comp3134winter2024.ssh: Flags [P.], seq 97:161, ack 160, win 263, options [nop,nop,TS val 3775886668 ecr 3895703647], length 64
+19:08:15.745642 eth0  In  IP 180.101.88.252.46080 > comp3134winter2024.ssh: Flags [F.], seq 161, ack 160, win 263, options [nop,nop,TS val 3775886668 ecr 3895703647], length 0
+19:08:15.745691 eth0  Out IP comp3134winter2024.ssh > 180.101.88.252.46080: Flags [.], ack 161, win 503, options [nop,nop,TS val 3895703845 ecr 3775886668], length 0
+19:08:15.747224 eth0  Out IP comp3134winter2024.ssh > 180.101.88.252.46080: Flags [F.], seq 160, ack 162, win 503, options [nop,nop,TS val 3895703846 ecr 3775886668], length 0
+19:08:15.944238 eth0  In  IP 180.101.88.252.46080 > comp3134winter2024.ssh: Flags [.], ack 161, win 263, options [nop,nop,TS val 3775886717 ecr 3895703846], length 0
+19:08:16.129812 lo    In  IP localhost.49593 > localhost.domain: 14567+ [1au] PTR? 2.67.207.67.in-addr.arpa. (53)
+19:08:16.130172 eth0  Out IP comp3134winter2024.39611 > 67.207.67.3.domain: 34017+ [1au] PTR? 2.67.207.67.in-addr.arpa. (53)
+19:08:16.130286 eth0  Out IP comp3134winter2024.47040 > 67.207.67.3.domain: 44755+ [1au] PTR? 2.67.207.67.in-addr.arpa. (53)
+19:08:16.130322 eth0  Out IP comp3134winter2024.53880 > 67.207.67.2.domain: Flags [P.], seq 366:410, ack 766, win 501, options [nop,nop,TS val 702561765 ecr 1990301113], length 44 59597+ PTR? 2.67.207.67.in-addr.arpa. (42)
+19:08:16.131109 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.39611: 34017 NXDomain 0/1/1 (120)
+19:08:16.131145 eth0  In  IP 67.207.67.2.domain > comp3134winter2024.53880: Flags [P.], seq 766:877, ack 410, win 128, options [nop,nop,TS val 1990302043 ecr 702561765], length 111 59597 NXDomain 0/1/0 (109)
+19:08:16.131166 eth0  Out IP comp3134winter2024.53880 > 67.207.67.2.domain: Flags [.], ack 877, win 501, options [nop,nop,TS val 702561766 ecr 1990302043], length 0
+19:08:16.131405 eth0  Out IP comp3134winter2024.39611 > 67.207.67.3.domain: 34017+ PTR? 2.67.207.67.in-addr.arpa. (42)
+19:08:16.131752 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.39611: 34017 NXDomain 0/1/0 (109)
+19:08:16.144566 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.47040: 44755 NXDomain 0/1/1 (120)
+19:08:16.144709 eth0  Out IP comp3134winter2024.47040 > 67.207.67.3.domain: 44755+ PTR? 2.67.207.67.in-addr.arpa. (42)
+19:08:16.145135 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.47040: 44755 NXDomain 0/1/0 (109)
+19:08:16.145392 lo    In  IP localhost.domain > localhost.49593: 14567 NXDomain 0/1/1 (120)
+19:08:16.146996 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 4696:7592, ack 1, win 501, options [nop,nop,TS val 1717128312 ecr 1532913662], length 2896
+19:08:16.147017 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 7592:8828, ack 1, win 501, options [nop,nop,TS val 1717128312 ecr 1532913662], length 1236
+19:08:16.147102 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 8828:11724, ack 1, win 501, options [nop,nop,TS val 1717128312 ecr 1532913662], length 2896
+19:08:16.147253 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 11724:14620, ack 1, win 501, options [nop,nop,TS val 1717128312 ecr 1532913662], length 2896
+19:08:16.147262 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 14620:17216, ack 1, win 501, options [nop,nop,TS val 1717128312 ecr 1532913662], length 2596
+19:08:16.172722 eth0  In  IP cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519 > comp3134winter2024.ssh: Flags [.], ack 17216, win 2048, options [nop,nop,TS val 1532914663 ecr 1717128312], length 0
+19:08:17.154170 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 17216:20112, ack 1, win 501, options [nop,nop,TS val 1717129319 ecr 1532914663], length 2896
+19:08:17.154194 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 20112:21348, ack 1, win 501, options [nop,nop,TS val 1717129319 ecr 1532914663], length 1236
+19:08:17.154390 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 21348:21416, ack 1, win 501, options [nop,nop,TS val 1717129319 ecr 1532914663], length 68
+19:08:17.171112 eth0  In  IP cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519 > comp3134winter2024.ssh: Flags [.], ack 21416, win 1982, options [nop,nop,TS val 1532915670 ecr 1717129319], length 0
+19:08:17.178331 eth0  In  IP cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519 > comp3134winter2024.ssh: Flags [.], ack 21416, win 2048, options [nop,nop,TS val 1532915670 ecr 1717129319], length 0
+19:08:19.000849 eth0  In  IP 67.207.67.2.domain > comp3134winter2024.53880: Flags [F.], seq 877, ack 410, win 128, options [nop,nop,TS val 1990304912 ecr 702561766], length 0
+19:08:19.000974 eth0  Out IP comp3134winter2024.53880 > 67.207.67.2.domain: Flags [F.], seq 410, ack 878, win 501, options [nop,nop,TS val 702564636 ecr 1990304912], length 0
+19:08:19.001326 eth0  In  IP 67.207.67.2.domain > comp3134winter2024.53880: Flags [.], ack 411, win 128, options [nop,nop,TS val 1990304913 ecr 702564636], length 0
+19:08:19.201901 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 21416:24312, ack 1, win 501, options [nop,nop,TS val 1717131367 ecr 1532915670], length 2896
+19:08:19.201931 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 24312:25548, ack 1, win 501, options [nop,nop,TS val 1717131367 ecr 1532915670], length 1236
+19:08:19.202030 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 25548:25608, ack 1, win 501, options [nop,nop,TS val 1717131367 ecr 1532915670], length 60
+19:08:19.220751 eth0  In  IP cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519 > comp3134winter2024.ssh: Flags [.], ack 25608, win 2048, options [nop,nop,TS val 1532917717 ecr 1717131367], length 0
+19:08:23.165016 eth0  In  IP 20.223.180.182.60688 > comp3134winter2024.ssh: Flags [S], seq 2927357911, win 64240, options [mss 1440,sackOK,TS val 3322262916 ecr 0,nop,wscale 7], length 0
+19:08:23.165084 eth0  Out IP comp3134winter2024.ssh > 20.223.180.182.60688: Flags [S.], seq 1942602807, ack 2927357912, win 65160, options [mss 1460,sackOK,TS val 1170822153 ecr 3322262916,nop,wscale 7], length 0
+19:08:23.244800 eth0  In  IP 20.223.180.182.60688 > comp3134winter2024.ssh: Flags [.], ack 1, win 502, options [nop,nop,TS val 3322262996 ecr 1170822153], length 0
+19:08:23.244879 eth0  In  IP 20.223.180.182.60688 > comp3134winter2024.ssh: Flags [P.], seq 1:23, ack 1, win 502, options [nop,nop,TS val 3322262996 ecr 1170822153], length 22: SSH: SSH-2.0-libssh_0.9.6
+19:08:23.244897 eth0  Out IP comp3134winter2024.ssh > 20.223.180.182.60688: Flags [.], ack 23, win 509, options [nop,nop,TS val 1170822233 ecr 3322262996], length 0
+19:08:23.258653 eth0  Out IP comp3134winter2024.ssh > 20.223.180.182.60688: Flags [P.], seq 1:42, ack 23, win 509, options [nop,nop,TS val 1170822247 ecr 3322262996], length 41: SSH: SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.6
+19:08:23.297794 lo    In  IP localhost.53068 > localhost.domain: 37300+ [1au] PTR? 182.180.223.20.in-addr.arpa. (56)
+19:08:23.298098 eth0  Out IP comp3134winter2024.58765 > 67.207.67.3.domain: 40419+ [1au] PTR? 182.180.223.20.in-addr.arpa. (56)
+19:08:23.298214 eth0  Out IP comp3134winter2024.41009 > 67.207.67.3.domain: 54965+ [1au] PTR? 182.180.223.20.in-addr.arpa. (56)
+19:08:23.298261 eth0  Out IP comp3134winter2024.53896 > 67.207.67.2.domain: Flags [S], seq 1820853663, win 64240, options [mss 1460,sackOK,TS val 702568933 ecr 0,nop,wscale 7,tfo  cookiereq,nop,nop], length 0
+19:08:23.298629 eth0  In  IP 67.207.67.2.domain > comp3134winter2024.53896: Flags [S.], seq 1508277605, ack 1820853664, win 65160, options [mss 1460,sackOK,TS val 456224310 ecr 702568933,nop,wscale 9], length 0
+19:08:23.298653 eth0  Out IP comp3134winter2024.53896 > 67.207.67.2.domain: Flags [.], ack 1, win 502, options [nop,nop,TS val 702568934 ecr 456224310], length 0
+19:08:23.298672 eth0  Out IP comp3134winter2024.53896 > 67.207.67.2.domain: Flags [P.], seq 1:48, ack 1, win 502, options [nop,nop,TS val 702568934 ecr 456224310], length 47 50254+ PTR? 182.180.223.20.in-addr.arpa. (45)
+19:08:23.299057 eth0  In  IP 67.207.67.2.domain > comp3134winter2024.53896: Flags [.], ack 48, win 128, options [nop,nop,TS val 456224311 ecr 702568934], length 0
+19:08:23.313041 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.58765: 40419 NXDomain 0/1/1 (142)
+19:08:23.313041 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.41009: 54965 NXDomain 0/1/1 (142)
+19:08:23.313320 eth0  Out IP comp3134winter2024.58765 > 67.207.67.3.domain: 40419+ PTR? 182.180.223.20.in-addr.arpa. (45)
+19:08:23.313378 eth0  Out IP comp3134winter2024.41009 > 67.207.67.3.domain: 54965+ PTR? 182.180.223.20.in-addr.arpa. (45)
+19:08:23.313669 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.58765: 40419 NXDomain 0/1/0 (131)
+19:08:23.313859 eth0  In  IP 67.207.67.3.domain > comp3134winter2024.41009: 54965 NXDomain 0/1/0 (131)
+19:08:23.324932 eth0  In  IP 67.207.67.2.domain > comp3134winter2024.53896: Flags [P.], seq 1:134, ack 48, win 128, options [nop,nop,TS val 456224337 ecr 702568934], length 133 50254 NXDomain 0/1/0 (131)
+19:08:23.324978 eth0  Out IP comp3134winter2024.53896 > 67.207.67.2.domain: Flags [.], ack 134, win 501, options [nop,nop,TS val 702568960 ecr 456224337], length 0
+19:08:23.325261 lo    In  IP localhost.domain > localhost.53068: 37300 NXDomain 0/1/1 (142)
+19:08:23.337531 eth0  In  IP 20.223.180.182.60688 > comp3134winter2024.ssh: Flags [.], ack 42, win 502, options [nop,nop,TS val 3322263089 ecr 1170822247], length 0
+19:08:23.337575 eth0  Out IP comp3134winter2024.ssh > 20.223.180.182.60688: Flags [P.], seq 42:1154, ack 23, win 509, options [nop,nop,TS val 1170822326 ecr 3322263089], length 1112
+19:08:23.337590 eth0  In  IP 20.223.180.182.60688 > comp3134winter2024.ssh: Flags [P.], seq 23:999, ack 42, win 502, options [nop,nop,TS val 3322263089 ecr 1170822247], length 976
+19:08:23.381542 eth0  Out IP comp3134winter2024.ssh > 20.223.180.182.60688: Flags [.], ack 999, win 502, options [nop,nop,TS val 1170822370 ecr 3322263089], length 0
+19:08:23.457297 eth0  In  IP 20.223.180.182.60688 > comp3134winter2024.ssh: Flags [.], ack 1154, win 501, options [nop,nop,TS val 3322263209 ecr 1170822326], length 0
+19:08:23.460570 eth0  In  IP 20.223.180.182.60688 > comp3134winter2024.ssh: Flags [P.], seq 999:1047, ack 1154, win 501, options [nop,nop,TS val 3322263212 ecr 1170822370], length 48
+19:08:23.460605 eth0  Out IP comp3134winter2024.ssh > 20.223.180.182.60688: Flags [.], ack 1047, win 502, options [nop,nop,TS val 1170822449 ecr 3322263212], length 0
+19:08:23.467369 eth0  Out IP comp3134winter2024.ssh > 20.223.180.182.60688: Flags [P.], seq 1154:1686, ack 1047, win 502, options [nop,nop,TS val 1170822455 ecr 3322263212], length 532
+19:08:23.546314 eth0  In  IP 20.223.180.182.60688 > comp3134winter2024.ssh: Flags [.], ack 1686, win 499, options [nop,nop,TS val 3322263298 ecr 1170822455], length 0
+19:08:23.546473 eth0  In  IP 20.223.180.182.60688 > comp3134winter2024.ssh: Flags [P.], seq 1047:1063, ack 1686, win 501, options [nop,nop,TS val 3322263298 ecr 1170822455], length 16
+19:08:23.589627 eth0  Out IP comp3134winter2024.ssh > 20.223.180.182.60688: Flags [.], ack 1063, win 502, options [nop,nop,TS val 1170822578 ecr 3322263298], length 0
+19:08:23.668528 eth0  In  IP 20.223.180.182.60688 > comp3134winter2024.ssh: Flags [P.], seq 1063:1115, ack 1686, win 501, options [nop,nop,TS val 3322263420 ecr 1170822578], length 52
+19:08:23.668572 eth0  Out IP comp3134winter2024.ssh > 20.223.180.182.60688: Flags [.], ack 1115, win 502, options [nop,nop,TS val 1170822657 ecr 3322263420], length 0
+19:08:23.668707 eth0  Out IP comp3134winter2024.ssh > 20.223.180.182.60688: Flags [P.], seq 1686:1738, ack 1115, win 502, options [nop,nop,TS val 1170822657 ecr 3322263420], length 52
+19:08:23.747746 eth0  In  IP 20.223.180.182.60688 > comp3134winter2024.ssh: Flags [P.], seq 1115:1199, ack 1738, win 501, options [nop,nop,TS val 3322263499 ecr 1170822657], length 84
+19:08:23.789533 eth0  Out IP comp3134winter2024.ssh > 20.223.180.182.60688: Flags [.], ack 1199, win 502, options [nop,nop,TS val 1170822778 ecr 3322263499], length 0
+19:08:24.322426 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 25608:28504, ack 1, win 501, options [nop,nop,TS val 1717136487 ecr 1532917717], length 2896
+19:08:24.322452 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 28504:29740, ack 1, win 501, options [nop,nop,TS val 1717136487 ecr 1532917717], length 1236
+19:08:24.322572 eth0  Out IP comp3134winter2024.ssh > cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers.com.53519: Flags [P.], seq 29740:29800, ack 1, win 501, options [nop,nop,TS val 1717136488 ecr 1532917717], length 60
+19:08:24.337648 eth0  In  IP cpef85e42a3ebf8-cmf85e42a3ebf6.cpe.net.cable.rogers^C221 packets captured
+^C
+252 packets received by filter
+0 packets dropped by kernel
