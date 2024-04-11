@@ -1,0 +1,6 @@
+* What I see
+- names of directories in the current directory ( 2 levels above our origni dir /var/www/html)
+
+* Sensitive information given
+- important subdirectories such as (backups, lib, local, log, and www )
+can contain sensitive information.

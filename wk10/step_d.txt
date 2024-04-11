@@ -1,0 +1,10 @@
+* What I see
+- two warning messages
+- http://165.22.228.255/directory_traversal_part1.php?q=hello
+- line where the has been flagged
+
+
+* Sensitive information given
+- function name of the php file called
+- what did the function does
+- location where the current warning appears. (in this case line 7 of the php file)

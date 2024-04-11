@@ -1,0 +1,8 @@
+Preventing Directory traversal:
+- Use basename() on the input to strip out any directory traversal attempts, ensuring only the last component of the path is used
+- check if directory is valid and within the current directory
+
+
+File Existence and Type
+- Use file_exists() and is_dir() to verify that the requested path points to an existing directory.
+- if the input contains a dot, reject to prevent file listings.
