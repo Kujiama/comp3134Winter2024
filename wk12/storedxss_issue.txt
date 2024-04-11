@@ -1,0 +1,8 @@
+Issue Identified in the Stored XSS Scenario:
+
+The major issue is the lack of sanitization of the output in storexss.php.
+By directly echoing the contents of storedxss.txt, which includes a malicious JavaScript snippet,
+any HTML or JavaScript code stored in storedxss.txt is executed by the browser.
+the attacker could potentially inject malicious scripts to be stored and later executed,
+leading to various security threats such as session hijacking, data theft, and unauthorized actions on behalf of the user.
+The script provided in storedxss.txt redirects the user to another page without their consent,
